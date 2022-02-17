@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <title>Perimeter</title>
+  <body>
+    <div class="container">
+      <input class="input" type="text" />
+      <p class="p"></p>
+    </div>
+
+    <script>
+      const input = document.querySelector("input");
+      const para = document.querySelector("p");
+
+      function perimeter(num) {
+        return num * 3.14 * 2;
+      }
+
+      input.addEventListener("change", () => {
+        const num = parseFloat(input.value);
+        if (isNaN(num)) {
+          para.textContent = "Please, write a number!";
+        } else {
+          para.textContent = `The perimeter of a circle with a radius of ${num} is: ${perimeter(
+            num
+          )}`;
+        }
+      });
+    </script>
+  </body>
+</html>
