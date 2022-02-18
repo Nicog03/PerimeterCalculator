@@ -8,8 +8,18 @@ html {
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  background-color: #1ec2c2;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: black solid 5px;
+  box-shadow: black 5px 5px;
 }
 
 .container {
@@ -18,7 +28,7 @@ body {
   border-radius: 10px;
   box-shadow: black 5px 5px;
   border: solid black 5px;
-  transition: ease-out 1s;
+  transition: ease-out 0.1s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +42,7 @@ input {
   font-size: 20px;
   font-family: "Roboto Slab";
   transition: ease-out 0.3s;
+  text-align: center;
 }
 
 input:focus {
