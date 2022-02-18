@@ -11,7 +11,7 @@
     <h1>Perimeter Calculator</h1>
     <div class="container">
       <input class="input" type="text" />
-      <p class="p"></p>
+      <p class="p">Please, insert a number!</p>
     </div>
 
     <script>
@@ -25,7 +25,8 @@
       input.addEventListener("change", () => {
         const num = parseFloat(input.value);
         if (isNaN(num)) {
-          para.textContent = "Please, write a number!";
+          para.textContent =
+            "Well... i don't know what i am supposed to do with that.";
         } else {
           para.textContent = `The perimeter of a circle with a radius of ${num} is: ${perimeter(
             num
