@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <title>Perimeter</title>
   <body>
@@ -13,26 +14,5 @@
       <input class="input" type="text" />
       <p class="p"></p>
     </div>
-
-    <script>
-      const input = document.querySelector("input");
-      const para = document.querySelector("p");
-
-      function perimeter(num) {
-        return (num * 3.14 * 2).toFixed(0);
-      }
-
-      input.addEventListener("change", () => {
-        const num = parseFloat(input.value);
-        if (isNaN(num)) {
-          para.textContent =
-            "Well... i don't know what i am supposed to do with that.";
-        } else {
-          para.textContent = `The perimeter of a circle with a radius of ${num} is: ${perimeter(
-            num
-          )}`;
-        }
-      });
-    </script>
   </body>
 </html>
